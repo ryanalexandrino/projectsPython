@@ -5,5 +5,5 @@
 largura = float(input('Digite a largura da parede: '))
 altura = float(input('Digite a altura da parede: '))
 #Calcula e exibe a área e quantidade de tinta necessária para pinta-la
-print(f'A parede possui uma area de {largura * altura} metros, sendo necessário {(largura * altura) / 2} '
+print(f'A parede possui uma area de {largura * altura:.1f} metros, sendo necessário {(largura * altura) / 2:.1f} '
       f'litros de tinta para pinta-la por completo')
