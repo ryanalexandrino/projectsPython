@@ -1,7 +1,9 @@
-#Faça um programa que leia um número inteiro e exiba sua tabuada
-#Pede o número inteiro ao usuário
+# Faça um programa que leia um número inteiro e exiba sua tabuada
+
+# Pede o número inteiro ao usuário
 numero = int(input('Digite um número inteiro: '))
-#Calcula sua tabuada!
+
+# Calcula a tabuada do número digitado!
 print(f'Veja abaixo a tabuada do número {numero}: \n'
       f'{numero} x 1  =  {numero*1} \n'
       f'{numero} x 2  =  {numero*2}\n'
