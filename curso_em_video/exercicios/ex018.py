@@ -1,13 +1,13 @@
 # Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse angulo
 
-# Importa a biblioteca de matemática
+# Importa o módulo de matemática
 import math
 
-# Pede o angulo ao usuário e converte em radios
+# Pede o angulo ao usuário e converte em radios para uso do métodos necessários
 angulo = int(input('Digite um valor equivalente a um angulo: '))
 radio = math.radians(angulo)
 
-# Calcula os angulos solicitados
+# Calcula os angulos solicitados com os métodos sin, cos e tan
 seno = math.sin(radio)
 cosseno = math.cos(radio)
 tangente = math.tan(radio)
