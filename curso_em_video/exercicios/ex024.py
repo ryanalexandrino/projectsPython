@@ -1,13 +1,10 @@
 # Crie um programa que leia o nome de uma cidade e diga se ela começa com nome "Santo"
 
-# Lê o nome da cidade do usuário
-cidade = str(input('Digite o nome de uma cidade: '))
-
-# Divide a string cidade digitada
-primeiro_cidade = cidade.split()
+# Lê o nome da cidade do usuário e a divide
+cidade = str(input('Digite o nome de uma cidade: ')).split()
 
 # Analisa se a cidade possui a palavra "SANTO"
-cidada_santa = "SANTO" in primeiro_cidade[0].upper()
+cidada_santa = "SANTO" in cidade[0].upper()
 
 # Exibe a mensagem ao usuário através de uma condicional, conforme retorno da análise
 if cidada_santa:

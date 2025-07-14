@@ -1,7 +1,7 @@
 # Crie um programa o nome de uma pessoa e diga se ela tem "SILVA" no nome
 
 # Lê o nome completo da usuária
-nome = str(input('Digite seu nome completo: '))
+nome = str(input('Digite seu nome completo: ')).strip()
 
 # Verifica se o nome possui "SILVA"
 nome_silva = "SILVA" in nome.upper()
