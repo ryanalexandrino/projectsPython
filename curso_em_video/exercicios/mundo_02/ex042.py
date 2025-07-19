@@ -8,13 +8,13 @@ c = float(input('Digite o valor da terceira reta: '))
 
 # Condicional que verifica se as retas podem formar um triangulo
 if a + b > c and a + c > b and b + c > a:
-    print(f'Os lados digitados ({a}, {b}, {c}) podem sim formar um triangulo!')
+    print(f'Os lados digitados podem sim formar um triangulo!')
     # Verifica qual o tipo triangulo
     if a == b == c:
         print(f'Esse triangulo é equilátero!')
-    elif a != b != c:
+    elif a != b != c != a:
         print(f'Esse triangulo é escaleno!')
     else:
         print(f'Esse triangulo é isósceles!')
 else:
-    print(f'Os lados digitados ({a}, {b}, {c}) não podem formar um triangulo!')
+    print(f'Os lados digitados não podem formar um triangulo!')

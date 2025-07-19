@@ -1,4 +1,4 @@
-# Faça um programa que leia a data de nascimento de um jovem e informe, de acordo com suu idade:
+# Faça um programa que leia a data de nascimento de um jovem e informe, de acordo com sua idade:
 # Se ele ainda vai se alistar ao serviço militar
 # Se já é hora de se alistar ao serviço militar
 # Se já passou o tempo de se alistar
@@ -12,11 +12,15 @@ data_nascimento = int(input('Em que ano você nasceu? '))
 idade = date.today().year - data_nascimento
 
 # Cria a condicional aninhada que verifica a situação de alistamento
-if idade < 17:
+if idade < 18:
+    saldo_anos = 18 - idade
     print(f'Ainda não é hora de se alistar.. \n'
-          f'Ainda faltam {17 - idade} anos para seu alistamento!')
-elif idade == 17:
+          f'Ainda faltam {saldo_anos} anos para seu alistamento! \n'
+          f'Seu ano de alistamento será em {date.today().year + saldo_anos}')
+elif idade == 18:
     print(f'Já é hora de se alistar, você já possui {idade} anos!')
 else:
+    saldo_anos = idade - 18
     print(f'Já passou seu prazo de alistamento! \n'
-          f'Você se atrasou {idade - 17} anos para seus alistamento!')
+          f'Você se atrasou {saldo_anos} anos para seus alistamento! \n'
+          f'Seu ano de alistamento foi em {date.today().year - saldo_anos}')

@@ -12,7 +12,7 @@ financiamento = int(input('Insira em quanto anos pretende pagar o imóvel: '))
 prestacao = valor_casa / (financiamento * 12)
 
 # Cria uma condicional para validar a aprovação do empréstimo
-if salario * 0.30 < prestacao:
-    print('Infelizmente seu empréstimo foi negado..')
+if salario * 30 /100 < prestacao:
+    print('Infelizmente seu empréstimo foi negado..f')
 else:
     print(f'O seu empréstimo foi aprovado, com prestações no valor de R${prestacao:.2f}')

@@ -3,7 +3,7 @@
 # Até 9 anos - MIRIM
 # Até 14 anos - INFANTIL
 # Até 19 anos - JUNIOR
-# Até 20 anos - SÊNIOR
+# Até 25 anos - SÊNIOR
 # Acima - MASTER
 
 # Importa o módulo de datas
@@ -22,7 +22,7 @@ elif idade > 9 and idade <= 14:
     print(f'O nadador possui {idade} anos, e faz parte da categoria INFANTIL!')
 elif idade > 14 and idade <= 19:
     print(f'O nadador possui {idade} anos, e faz parte da categoria JUNIOR!')
-elif idade > 19 and idade <= 20:
+elif idade > 19 and idade <= 25:
     print(f'O nadador possui {idade} anos, e faz parte da categoria SÊNIOR!')
 else:
     print(f'O nadador possui {idade} anos, e faz parte da categoria MASTER!')

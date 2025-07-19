@@ -1,4 +1,4 @@
-# Escreva um programa que leia um número inteiro e peça para o usuário escolher a base de conversão:
+ # Escreva um programa que leia um número inteiro e peça para o usuário escolher a base de conversão:
 # 1 - para binário
 # 2 - para octal
 # 3 - para hexadecimal
@@ -15,10 +15,12 @@ escolha = int(input('Digite a opção desejada: '))
 
 # Cria uma condicional aninhada que converte o número conforme a base escolhida anteriorment
 if escolha == 1:
-    print(f'\nNúmero convertido em Binário: {bin(numero)}')
+    print(f'\nNúmero convertido em Binário: {bin(numero)[2:]}')
 elif escolha == 2:
-    print(f'\nNúmero convertido em Octal: {oct(numero)}')
+    print(f'\nNúmero convertido em Octal: {oct(numero)[2:]}')
 elif escolha == 3:
-    print(f'\nNúmero convertido em Hexadecimal: {hex(numero)}')
+    print(f'\nNúmero convertido em Hexadecimal: {hex(numero)[2:]}')
+else:
+    print('Opção inválida. Tente novamente!')
 
 
