@@ -12,7 +12,7 @@ raiz = int(sqrt(numero))
 
 # Cria um laço for que testa se o número é primo testando divisores até a sua raiz quadrada
 for c in range(2, raiz+1):
-    if numero % c == 0:
+    if numero % c != 0:
         primo = False
 
 if primo:
