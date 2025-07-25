@@ -1,21 +1,18 @@
 # Faça um programa que leia un número inteiro e diga se ele é un número primo
 
-# Importa o módulo matemática, função sqrt
-from math import sqrt
+# Declara as variáveis globais
+contador = 0
 
-# Declara a varíavel primo como global
-primo = bool
-
-# Lê o número do usuário e calcula sua raiz quadrada
+# Lê o número do usuário
 numero = int(input('Digite um número inteiro: '))
-raiz = int(sqrt(numero))
 
-# Cria um laço for que testa se o número é primo testando divisores até a sua raiz quadrada
-for c in range(2, raiz+1):
-    if numero % c != 0:
-        primo = False
+# Cria um laço for que conta quantas vezes o número é divísivel
+for c in range(1, numero+1):
+    if numero % c == 0:
+        contador += 1
 
-if primo:
+# Testa e exibe se o número é primo com base no contador
+if contador == 2:
     print(f'O número {numero} é primo!')
 else:
     print(f'O número {numero} não é primo')

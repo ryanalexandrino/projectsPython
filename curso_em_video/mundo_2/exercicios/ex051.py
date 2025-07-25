@@ -9,4 +9,5 @@ r = int(input('Digite a razao da PA: '))
 print('Com base nos valores inseridos, os 10 primeros termos são:')
 for c in range(1, 11):
     an = a1 + (c - 1) * r
-    print(f'{c}º Termo - {an}')
+    print(f'{an} → ', end='')
+print('FIM!')

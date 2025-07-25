@@ -7,7 +7,7 @@ import emoji
 
 # Realiza a contagem regressica com um laço de repetição for
 print('Contagem regressiva para o estouro dos fogos!')
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print(f'{c}!')
     sleep(1)
-print(emoji.emojize(":sparkler:", language="alias"))
+print(emoji.emojize("FIM! A contagem terminou! :fireworks: :rocket: :sparkles:"))
