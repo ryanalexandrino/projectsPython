@@ -12,7 +12,7 @@ for c in range(1, numero+1):
         contador += 1
 
 # Testa e exibe se o número é primo com base no contador
-if contador == 2:
+if contador <= 2:
     print(f'O número {numero} é primo!')
 else:
     print(f'O número {numero} não é primo')
