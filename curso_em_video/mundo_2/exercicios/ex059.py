@@ -27,9 +27,8 @@ while opcao != 5:
 
     # Cria uma condicional que realiza cada uma das ações do menu
     if opcao == 0 or opcao > 5:
-        pass
-    elif opcao == 1:
         print('\nOpção inválida! Tente novamente.')
+    elif opcao == 1:
         soma = numero_1 + numero_2
         print(f'\nA soma dos números é: {soma} \n')
     elif opcao == 2:
