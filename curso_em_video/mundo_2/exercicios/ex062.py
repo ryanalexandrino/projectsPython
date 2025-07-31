@@ -2,7 +2,7 @@
 # O programa encerra quando o usuário digitar 0 (termos)
 
 # Inicia as variáveis globais
-novos_termos = 11
+novos_termos = 10
 opcao = 0
 contador = 1
 total = 0
@@ -10,6 +10,7 @@ total = 0
 # Lê o primeiro termo e a razão da PA
 a1 = int(input('Digite o primeiro termo da PA: '))
 r = int(input('Digite a razao da PA: '))
+t = a1
 print('Com base nos valores inseridos, os 10 primeros termos são:')
 
 # Cria o laço do programa
@@ -17,8 +18,8 @@ while novos_termos != 0:
     # Calcula a progressão com base nos termos inseridos usando o while
     total += novos_termos
     while contador <= total:
-        an = a1 + (contador - 1) * r
-        print(f'{an} → ', end='')
+        print(f'{t} → ', end='')
+        t += r
         contador += 1
     print('FIM!\n')
 
@@ -33,3 +34,6 @@ while novos_termos != 0:
     else:
         print('\nPrograma encerrado!')
         novos_termos = 0
+
+# Exibe quantos termos foram calculados e exibidos:
+print(f'Ao todo, foram exibidos {total} termos nessa progressão!')
