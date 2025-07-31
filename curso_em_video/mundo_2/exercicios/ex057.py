@@ -7,10 +7,10 @@ sexo = ''
 
 # Cria a estrutura de repetição while par perguntar qual o sexo do usuário
 while sexo != 'M' and sexo != 'F':
-    sexo = str(input('\nQual o seu sexo? \n'
+    sexo = str(input('\nInforme o seu sexo: \n'
                      '[M] Masculino \n'
                      '[F] Feminino \n'
-                     'Digite a opção: '))
+                     'Digite a opção: ')).strip().upper()[0]
 
     if sexo != 'M' and sexo != 'F':
         print('Entrada inválida! Tente novamente.')

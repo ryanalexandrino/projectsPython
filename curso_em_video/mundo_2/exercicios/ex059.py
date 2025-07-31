@@ -6,6 +6,9 @@
 # [5] Sair do programa
 # O programa deve funcionar em loop até o usuário optar por sair do programa
 
+# Importa o módulo sleep
+from time import sleep
+
 # Cria opção como uma variável global
 opcao = 0
 
@@ -26,9 +29,7 @@ while opcao != 5:
                       'Digite a opção: '))
 
     # Cria uma condicional que realiza cada uma das ações do menu
-    if opcao == 0 or opcao > 5:
-        print('\nOpção inválida! Tente novamente.')
-    elif opcao == 1:
+    if opcao == 1:
         soma = numero_1 + numero_2
         print(f'\nA soma dos números é: {soma} \n')
     elif opcao == 2:
@@ -45,6 +46,11 @@ while opcao != 5:
         print('\nDigite os novos números:')
         numero_1 = int(input('Digite o primeiro número inteiro: '))
         numero_2 = int(input('Digite o segundo número inteiro: '))
+    elif opcao == 5:
+        print('\nFinalizando..')
+        sleep(2)
+    else:
+        print('\nOpção inválida! Tente novamente.')
 
 # Exibe a mensagem de que indica a saída do programa
 print('Programa encerrado!')
