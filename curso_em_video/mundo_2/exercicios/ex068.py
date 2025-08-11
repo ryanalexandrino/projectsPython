@@ -67,4 +67,3 @@ elif contador == 1:
     print('O jogador venceu apenas uma vez..')
 else:
     print(f'O jogador venceu {contador} vezes seguidas!')
-    

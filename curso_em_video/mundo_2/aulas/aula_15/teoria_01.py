@@ -8,4 +8,4 @@ while True:
     if numero == 999:
         break
     else:
-        soma +=m
+        soma += numero
