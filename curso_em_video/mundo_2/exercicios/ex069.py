@@ -36,18 +36,18 @@ while True:
     # Pergunta ao usuário se o mesmo deseja continuar e valida a resposta
     escolha = str(input('Deseja cadastrar mais pessoas? \n'
                       '[S] Sim! \n'
-                      '[N] Não. \n')).upper().strip()
+                      '[N] Não! \n')).upper().strip()
     while escolha not in ['S', 'N']:
         print('Opção inválida! Tente novamente..')
         escolha = str(input('Deseja cadastrar mais pessoas? \n'
                           '[S] Sim! \n'
-                          '[N] Não. \n')).upper().strip()
+                          '[N] Não! \n')).upper().strip()
 
     # Quebra ou mantém o laço conforme a opção do usuário
-    if escolha == 'N':
-        break
-    else:
+    if escolha == 'S':
         print('Vamos cadastrar mais pessoas!')
+    else:
+        break
 
 # Exibe os resultados dos contadores ao usuário
 print('Vamos exibir os resultados das pessoas cadastradas:')

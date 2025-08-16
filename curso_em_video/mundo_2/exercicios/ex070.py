@@ -32,7 +32,7 @@ while True:
         nome_barato = produto
 
     # Lê a escolha do usuário e a valida
-    escolha = str(input('\nDeseja adicionar mais produtos a compra? \n'
+    escolha = str(input('Deseja adicionar mais produtos a compra? \n'
                         '[S] Sim! \n'
                         '[N] Não! \n'
                         'Digite a opção: ')).upper().strip()
@@ -47,20 +47,20 @@ while True:
     if escolha == 'N':
         break
     else:
-        print('Vamos adicionar mais produtos!')
+        print('\nVamos adicionar mais produtos!')
 
 # Exibe os resultados da compra ao usuário
 # Total da compra
 print('\nResumo da compra: \n'
-      f'Total da compra: R${total:.2f}!')
+      f'Total da compra: R${total:.2f}.')
 
 # Realiza os testes lógicos para exibir o resultado conforme a quantidade de produtos
 if produtos_caros == 0:
     print('Nenhum produto acima de R$1000,00 inserido na compra..')
 elif produtos_caros == 1:
-    print('Apenas 1 produto acima de R$1000,00 inserido na compra.')
+    print('Apenas 1 produto acima de R$1000,00 inserido na compra!')
 else:
     print(f'Total de produtos acima de R$1000,00: {produtos_caros}')
 
 # Produto mais barato
-print(f'O produto mais barato inserido foi: {nome_barato}!')
+print(f'O produto mais barato inserido foi a(o) {nome_barato}, custando apenas R${mais_barato:.2f}!')

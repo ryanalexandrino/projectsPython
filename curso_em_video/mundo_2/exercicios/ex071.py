@@ -4,7 +4,7 @@
 
 # Laço while infinito com condição de parada de escolha do usuário
 while True:
-    valor_sacado = int(input('Digite o valor a ser sacado: '))
+    valor_sacado = int(input('\nDigite o valor a ser sacado: '))
     valor_original = valor_sacado
 
     # Algoritmo de distribuição
@@ -20,7 +20,7 @@ while True:
     notas_01 = valor_sacado
 
     # Resultados
-    print(f'Para sacar R${valor_original}:')
+    print(f'Para sacar R${valor_original}, você receberá:')
     print(f'Notas de R$50: {notas_50}')
     print(f'Notas de R$20: {notas_20}')
     print(f'Notas de R$10: {notas_10}')
@@ -35,4 +35,6 @@ while True:
         print('Opção inválida! Tente novamente..')
     elif opcao != 'S':
         break
-        
+
+#Mostra a saida do laço ao usuário
+print('Muito obrigado por usar nosso caixa eletronico!')

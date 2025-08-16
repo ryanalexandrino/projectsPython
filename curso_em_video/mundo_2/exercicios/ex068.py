@@ -6,7 +6,6 @@
 from random import randint
 
 # Inicializa variáveis globais
-soma = 0
 contador = 0
 
 # Apresentação do jogo
@@ -15,13 +14,10 @@ print('Vamos jogar par ou impar!? \n')
 # Laço while infinito com condição de parada em caso de derrota do jogador
 while True:
     # Lê o número do jogador e válida esse número
-    numero_jogador = int(input('Digite um número inteiro de 1 a 5: '))
-    while numero_jogador < 0 or numero_jogador > 5 :
-        print("Número inválido, tente novamente!")
-        numero_jogador = int(input('Digite um número inteiro de 1 a 5: '))
+    numero_jogador = int(input('Digite um número inteiro: '))
 
     # Define o número escolhido pela máquina
-    numero_maquina = randint(1,5)
+    numero_maquina = randint(1,10)
 
     # Soma o número do jogador com o da máquina
     soma = numero_jogador + numero_maquina
