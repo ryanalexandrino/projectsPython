@@ -30,11 +30,13 @@ while True:
     print('Deseja fazer outro saque?')
     print('[S]')
     print('[N]')
-    opcao = str(input('Digite a opção: ')).upper()
-    if opcao not in ['S', 'N']:
-        print('Opção inválida! Tente novamente..')
-    elif opcao != 'S':
+    opcao = ''
+    while opcao not in ['S', 'N']:
+        opcao = str(input('Digite a opção: ')).upper()
+        if opcao not in ['S', 'N']:
+            print('Opção inválida! Tente novamente..')
+    if opcao != 'S':
         break
 
-#Mostra a saida do laço ao usuário
+# Mostra a saida do laço ao usuário
 print('Muito obrigado por usar nosso caixa eletronico!')

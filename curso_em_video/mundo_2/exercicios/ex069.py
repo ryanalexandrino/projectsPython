@@ -14,16 +14,14 @@ contador_mulheres = 0
 while True:
     # Lê e valida sexo e idade da pessoa cadastrada
     idade = int(input('Digite a idade da pessoa: '))
-    sexo = str(input('Qual o sexo dessa pessoa? \n'
-                     '[M] Masculino \n'
-                     '[F] Feminino \n'
-                     'Digite a opção: ')).upper().strip()
+    sexo = ''
     while sexo not in ['M', 'F']:
-        print('Opção inválida! Tente novamente..')
         sexo = str(input('Qual o sexo dessa pessoa? \n'
                          '[M] Masculino \n'
                          '[F] Feminino \n'
                          'Digite a opção: ')).upper().strip()
+        if sexo not in ['M', 'F']:
+            print("Opção inválida, tente novamente!")
 
     # Realiza os teste lógicos para contabilizar as pessoas conforme os parâmetros
     if idade > 18:
@@ -34,18 +32,17 @@ while True:
         contador_mulheres += 1
 
     # Pergunta ao usuário se o mesmo deseja continuar e valida a resposta
-    escolha = str(input('Deseja cadastrar mais pessoas? \n'
-                      '[S] Sim! \n'
-                      '[N] Não! \n')).upper().strip()
+    escolha = ''
     while escolha not in ['S', 'N']:
-        print('Opção inválida! Tente novamente..')
-        escolha = str(input('Deseja cadastrar mais pessoas? \n'
+        escolha = str(input('\nDeseja cadastrar mais pessoas? \n'
                           '[S] Sim! \n'
                           '[N] Não! \n')).upper().strip()
+        if escolha not in ['S', 'N']:
+            print("Opção inválida, tente novamente!")
 
     # Quebra ou mantém o laço conforme a opção do usuário
     if escolha == 'S':
-        print('Vamos cadastrar mais pessoas!')
+        print('\nVamos cadastrar mais pessoas!')
     else:
         break
 

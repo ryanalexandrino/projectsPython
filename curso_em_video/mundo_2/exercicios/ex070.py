@@ -32,16 +32,14 @@ while True:
         nome_barato = produto
 
     # Lê a escolha do usuário e a valida
-    escolha = str(input('Deseja adicionar mais produtos a compra? \n'
-                        '[S] Sim! \n'
-                        '[N] Não! \n'
-                        'Digite a opção: ')).upper().strip()
+    escolha = ''
     while escolha not in ['S', 'N']:
-        print('Opção inválida! Tente novamente..')
         escolha = str(input('\nDeseja adicionar mais produtos a compra? \n'
                             '[S] Sim! \n'
                             '[N] Não! \n'
                             'Digite a opção: ')).upper().strip()
+        if escolha not in ['S', 'N']:
+            print('Opção inválida! Tente novamente..')
 
     # Quebra ou mantém o laço conforme a opção do usuário
     if escolha == 'N':
